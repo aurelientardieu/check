@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="fr">
+    <title>Check</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/typo.css">
+    <link href="http://fonts.googleapis.com/css?family=Atma:400,700|Open+Sans" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <section class="bulles">
+      <div id="bulles01">
+      <img src="../images/bulle02.png" alt="bulles">
+      </div>
+      <div id="bulles02">
+      <img src="../images/bulle01.png" alt="bulles">
+      </div>
+    </section>
+
+    <div id="retour">
+      <a href="../menu/index.html"><img src="../images/retour.png" alt="retour"></a>
+    </div>
+
+    <section class="logo">
+      <a href="../index.html"><button class="bubbly-button"></button></a>
+      <h1>Stella, Ella, Ola</h1>
+    </section>
+
+    <div id="illu-plus">
+    <img src="../images/musique.png" alt="doigt">
+    </div>
+
+    <div id="presentation-text">
+    <h2>Apprend à jouer avec tes mains !</h2>
+    <p>En cercle les mains tendues de chaque côté, les unes sur les autres.On se tape dans les mains en chantant. On tourne dans le sens des aiguilles d’une montre. La main droite tape dans la main droite du partenaire de gauche. Celui qui se fait taper dans la main à la fin de la chanson, c’est-à-dire à « nine » est éliminé.</p>
+    </div>
+
+    <audio id="audio" src="../images/stella_ella_ola.mp3"></audio>
+    <div id="player">
+      <h3>Écoute la chanson</h3>
+      <div id="controlsContainer">
+        <div class="play control"> <img src="../images/play.png" alt="Play"> </div>
+        <div class="pause control"> <img src="../images/pause.png" alt="Pause"> </div>
+        <div class="stop control"> <img src="../images/stop.png" alt="Stop"> </div>
+      </div>
+    </div>
+
+    <section class="paroles">
+      <div id="paroles-en">
+      <img src="../images/paroles-en.png" alt="paroles-en">
+      </div>
+      <div id="paroles-fr">
+      <img src="../images/paroles-fr.png" alt="paroles-fr">
+      </div>
+    </section>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+
+        <section class="bulles-overlay">
+          <div id="bulles-overlay-01">
+          <img src="../images/bulle02.png" alt="bulles">
+          </div>
+          <div id="bulles-overlay-02">
+          <img src="../images/bulle01.png" alt="bulles">
+          </div>
+        </section>
+        <h1>Maintenant que tu connais les règles, à toi de jouer avec tes amis !</h1>
+
+        <div id="logo-overlay">
+        <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+        </div>
+
+      </div>
+    </div>
+
+    <span onclick="openNav()"><div id="jouer"><a>JOUER</a></div></span>
+
+    <div id="haut-de-page">
+      <a class="js-scrollTo" href="#bulles01"><img src="../images/haut.png" alt="haut-de-page"></a>
+    </div>
+
+    <section class="bulles3">
+      <div id="bulles05">
+      <img src="../images/bulle03.png" alt="bulles">
+      </div>
+    </section>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+  </body>
+</html>

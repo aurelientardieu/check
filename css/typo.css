@@ -1,0 +1,125 @@
+h1 {
+  font-family: 'Atma', cursive;
+  font-size: 3.2em;
+  text-align: center;
+  color: #51af99;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Atma', cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #8e8e8e;
+  font-weight: 700;
+}
+
+h3{
+  font-family: 'Atma', cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #55c7ad;
+  font-weight: 700;
+}
+
+h4{
+  font-family: 'Atma', cursive;
+  font-size: 1.3em;
+  color: #8e8e8e;
+  font-weight: 700;
+}
+
+h5 {
+  display: none;
+  font-family: 'Atma', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  color: #8e8e8e;
+  font-weight: 700;
+  margin-top: -30px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #b2b2b2;
+  font-weight: 400;
+}
+
+/* Boutons Jouer */
+
+#jouer{
+  text-decoration: none;
+  font-family: 'Atma', cursive;
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+}
+
+#jouer-blc{
+  text-decoration: none;
+  font-family: 'Atma', cursive;
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+}
+
+/* Menu */
+
+.jeux button {
+  font-family: 'Atma', cursive;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+#vs p{
+  text-decoration: none;
+  font-family: 'Atma', cursive;
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff8e7;
+}
+
+.table-multi li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+
+.overlay h1{
+  font-family: 'Atma', cursive;
+  font-size: 3.2em;
+  text-align: center;
+  color: #fff8e7;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 950px){
+  h1{
+    font-size: 2.8em;
+  }
+  .overlay h1{
+    font-size: 2.8em;
+  }
+}
+
+
+@media screen and (max-width: 650px){
+  h1{
+    font-size: 1.8em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.5em;
+  }
+  .overlay h1{
+    font-size: 1.8em;
+  }
+}
+font-family: 'Atma', cursive;
+font-family: 'Open Sans', sans-serif;

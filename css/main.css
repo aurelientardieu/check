@@ -1,0 +1,858 @@
+html, body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #fff8e7;
+}
+
+/* Homepage */
+
+/* Bulles */
+
+.bulles{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#bulles01{
+  align-content: flex-start;
+  position: absolute;
+  left: -120px;
+  top:-105px;
+}
+
+#bulles02{
+align-content: flex-end;
+position: absolute;
+right:-170px;
+top: -110px;
+}
+
+.bulles2{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bulles03{
+  align-content: flex-start;
+  position: absolute;
+  left: -150px;
+  top:-420px;
+}
+
+#bulles03 img{
+  width: 400px;
+}
+
+#bulles04{
+  align-content: flex-end;
+  position: absolute;
+  top: -400px;
+  right: -50px;
+}
+
+.bulles3{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bulles05{
+  align-content: flex-start;
+  position: absolute;
+  left: -150px;
+  top:-600px;
+}
+/* Logo + Titre */
+
+.logo{
+  text-align: center;
+    margin-bottom: 5%;
+}
+
+.logo h1{
+  margin-top: 2%;
+}
+
+/* Presentation */
+
+.presentation {
+  background: white;
+  width: 100%;
+}
+
+#presentation-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 3%;
+  }
+
+  /* Bouton Jouer 01*/
+
+#jouer-blc{
+  text-align: center;
+  margin-top: 8%;
+  padding-bottom: 12%;
+}
+
+#jouer-blc a{
+    background-color: #55c7ad;
+    border: none;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px;
+    box-shadow: 0 10px #51af99;
+}
+
+#jouer-blc :hover{
+  box-shadow: 0 10px #51af99, 0 5px 0 14px white, 0 5px 0 20px #ffd431;
+}
+
+#jouer-blc :active {
+  background-color: #51af99;
+  transform: translateY(10px);
+}
+
+/* Bouton Jouer 02*/
+
+#jouer{
+text-align: center;
+margin-top: 8%;
+padding-bottom: 12%;
+}
+
+#jouer a{
+  background-color: #55c7ad;
+  border: none;
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 60px;
+  box-shadow: 0 10px #51af99;
+}
+
+#jouer :hover{
+box-shadow: 0 10px #51af99, 0 5px 0 14px #fff8e7, 0 5px 0 20px #ffd431;
+}
+
+#jouer :active {
+background-color: #51af99;
+transform: translateY(10px);
+}
+
+/* Confettis */
+
+.bubbly-button {
+  background: url('logo-blc.png') center no-repeat;
+  padding: 85px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #55c7ad;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+
+.bubbly-button:focus {
+  outline: 0;
+}
+
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, transparent 20%, #55c7ad 20%, transparent 30%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, transparent 10%, #55c7ad 15%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, transparent 10%, #55c7ad 15%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%), radial-gradient(circle, #55c7ad 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #51af99;
+  box-shadow: 0 2px 25px #51af99;
+}
+
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+}
+}
+    /* Menu */
+
+.jeux{
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+.jeux button {
+  text-decoration: none;
+  background-color: #adadad;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.jeux button:hover{
+  background-color: #55c7ad;
+}
+.jeux button:active{
+  background-color: #51af99;
+}
+.jeux a{
+  text-decoration: none;
+}
+
+.jeux img{
+  background: #fff8e7;
+  width: 175px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.choix{
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.choix div{
+  margin: 20px;
+}
+
+    /* Jeux */
+
+#retour{
+  position: relative;
+  top:10%;
+  left: 10%;
+}
+#retour img{
+  width: 200px;
+}
+#haut-de-page{
+  position: relative;
+  right: -1100px;
+  top: -250px;
+}
+
+/* Overlay */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(81,175,153, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff8e7;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#logo-overlay{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+#logo-overlay img{
+  width: 50%;
+}
+
+.bulles-overlay{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bulles-overlay-01{
+  align-content: flex-start;
+  position: absolute;
+  left:-40%;
+  top:-150px;
+}
+
+#bulles-overlay-02{
+align-content: flex-end;
+position: absolute;
+right:-50%;
+top:-110px;
+}
+
+/* Jeu 01 */
+
+.image-lose{
+  display: none;
+  filter: grayscale(100%);
+  width: 200px;
+  height: 200px;
+  transform: translate(-25px,-25px);
+}
+
+.image-win{
+  display: none;
+  width: 200px;
+  height: 200px;
+  transform: translate(-25px,-25px);
+}
+
+.test-hover{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.test-hover div{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#pierre{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: url('../images/pierre.png') center no-repeat;
+  border-radius: 50%;
+  background-size: 200px;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#pierre:hover{
+  background-image: url('../images/poing.png');
+}
+#feuille{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: url('../images/papier.png') center no-repeat;
+  border-radius: 50%;
+  background-size: 200px;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#feuille:hover{
+  background-image: url('../images/papier_main.png');
+}
+#ciseaux{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: url('../images/ciseaux.png') center no-repeat;
+  border-radius: 50%;
+  background-size: 200px;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#ciseaux:hover{
+  background-image: url('../images/ciseaux_main.png');
+}
+#lezard{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: url('../images/lezard.png') center no-repeat;
+  border-radius: 50%;
+  background-size: 200px;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#lezard:hover{
+  background-image: url('../images/lezard_main.png');
+}
+#spock{
+  width: 150px;
+  height: 150px;
+  display: block;
+  background: url('../images/spock.png') center no-repeat;
+  border-radius: 50%;
+  background-size: 200px;
+  cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#spock:hover{
+  background-image: url('../images/spock_main.png');
+}
+
+#jouer{
+  text-align: center;
+  margin-top: 8%;
+  padding-bottom: 12%;
+}
+
+#exemple-pfcls{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+#exemple-pfcls div{
+  margin: 50px;
+}
+
+#vs p{
+    background-color: #55c7ad;
+    border: none;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 60px;
+    box-shadow: 0 10px #51af99;
+}
+
+#vs :hover{
+  box-shadow: 0 10px #51af99, 0 5px 0 14px #fff8e7, 0 5px 0 20px #ffd431;
+}
+
+#vs :active {
+  background-color: #51af99;
+  transform: translateY(10px);
+}
+    /* Jeu 02 */
+#player{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#controlsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: #51af99;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 60px;
+  border-radius: 30px;
+}
+
+#controlsContainer div{
+  margin: auto;
+  text-align: center;
+}
+
+#controlsContainer img{
+  width: 20%;
+  cursor: pointer;
+}
+
+.paroles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paroles img{
+  width: 90%;
+}
+    /* Jeu 03 */
+
+.exemple-doigt{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.exemple-doigt div{
+  width: 10%;
+}
+
+#main img{
+  width: 100%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
+#main img:hover{
+  transform: translateY(-25px);
+}
+
+#main02 img{
+  width: 100%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transform: translateY(20px);
+}
+
+#main02 img:hover{
+  transform: translateY(-5px);
+}
+
+#poing img{
+  width: 100%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transform: translateY(-20px);
+}
+
+#block{
+  margin: auto;
+  position: relative;
+  top: -50px;
+  z-index: -999;
+  background-color: #cbbba0;
+  width: 40%;
+  height: 70px;
+  margin-bottom: -100px;
+}
+
+#block02{
+  margin: auto;
+  position: relative;
+  top: -50px;
+  z-index: -999;
+  background-color: #cbbba0;
+  width: 20%;
+  height: 70px;
+  margin-bottom: -100px;
+}
+
+#prevision{
+  text-align: center;
+  margin: -100px;
+}
+
+#prevision img{
+  width: 30%;
+}
+    /* Jeu 04 */
+
+    #illu-plus{
+      text-align: center;
+      margin: -50px;
+    }
+    #illu-plus img{
+      width: 200px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+    }
+    #illu-plus :hover{
+      width: 250px;
+    }
+
+.image-addi{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#resultat{
+  text-align: center;
+}
+#resultat img{
+  width: 30%;
+}
+
+.table-addi{
+  margin-top: 5%;
+  text-align: center;
+}
+.table-addi img{
+  width: 40%;
+}
+
+/* Jeu 05 */
+
+.image-multi{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.image-multi div{
+  text-align: center;
+}
+.table-multi{
+  margin-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+#table{
+  margin: 60px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 950px){
+
+/* Bulles */
+
+  #bulles01{
+    left: -60px;
+    top:-50px;
+  }
+
+  #bulles01 img{
+    width: 200px;
+  }
+
+  #bulles02{
+  right:-85px;
+  top: -55px;
+  }
+
+  #bulles02 img{
+    width: 250px;
+  }
+
+  #bulles03{
+    left: -75px;
+    top:-420px;
+  }
+
+  #bulles03 img{
+    width: 200px;
+  }
+
+  #bulles04{
+    top: -400px;
+    right: -25px;
+  }
+
+  #bulles04 img{
+    width: 150px;
+  }
+  .bulles-overlay{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 650px){
+
+/* Bulles */
+
+  #bulles01{
+    left: -60px;
+    top:-50px;
+  }
+
+  #bulles01 img{
+    width: 150px;
+  }
+
+  #bulles02{
+  right:-85px;
+  top: -55px;
+  }
+
+  #bulles02 img{
+    width: 220px;
+  }
+
+.bulles2 {
+  visibility: hidden;
+}
+.bulles3{
+  visibility: hidden;
+}
+.bulles-overlay{
+  visibility: hidden;
+}
+
+/* Jouer */
+
+#jouer a{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 60px;
+    box-shadow: 0 10px #51af99;
+}
+
+#jouer :hover{
+  box-shadow: 0 10px #51af99, 0 5px 0 14px #fff8e7, 0 5px 0 20px #ffd431;
+  cursor: pointer;
+}
+
+#jouer :active {
+  background-color: #51af99;
+  transform: translateY(10px);
+}
+
+#presentation-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20px;
+
+}
